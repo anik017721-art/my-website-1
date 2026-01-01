@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaVerse - Your Ultimate Movie Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="highlight">Cine</span>Verse
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="active">Home</a></li>
+                <li class="nav-item"><a href="#trending">Trending</a></li>
+                <li class="nav-item"><a href="#movies">Movies</a></li>
+                <li class="nav-item"><a href="#tv-shows">TV Shows</a></li>
+                <!-- Add this inside the nav-menu, right after the TV Shows link -->
+<li class="nav-item genres-dropdown">
+    <a href="#" class="nav-link">Genres <i class="fas fa-chevron-down"></i></a>
+    <div class="genres-menu">
+        <div class="genres-grid">
+            <a href="#" class="genre-link">Action</a>
+            <a href="#" class="genre-link">Adventure</a>
+            <a href="#" class="genre-link">Animation</a>
+            <a href="#" class="genre-link">Comedy</a>
+            <a href="#" class="genre-link">Crime</a>
+            <a href="#" class="genre-link">Drama</a>
+            <a href="#" class="genre-link">Fantasy</a>
+            <a href="#" class="genre-link">Horror</a>
+            <a href="#" class="genre-link">Mystery</a>
+            <a href="#" class="genre-link">Romance</a>
+            <a href="#" class="genre-link">Science Fiction</a>
+            <a href="#" class="genre-link">Thriller</a>
+            <a href="#" class="genre-link">War</a>
+            <a href="#" class="genre-link">Western</a>
+            <a href="#" class="genre-link">Family</a>
+            <a href="#" class="genre-link">Musical</a>
+            <a href="#" class="genre-link">Documentary</a>
+        </div>
+    </div>
+</li>
+                <li class="nav-item"><a href="#genres">Genres</a></li>
+                <li class="nav-item search-box">
+                    <input type="text" placeholder="Search movies...">
+                    <i class="fas fa-search"></i>
+                </li>
+                <li class="nav-item user-actions">
+                    <button class="btn btn-login">Sign In</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="tag">New Release</span>
+            <h1>Dune: Part Two</h1>
+            <div class="movie-meta">
+                <span class="rating"><i class="fas fa-star"></i> 8.9/10</span>
+                <span class="year">2023</span>
+                <span class="duration">2h 46m</span>
+                <span class="quality">4K HDR</span>
+            </div>
+            <p class="description">Paul Atreides unites with the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between love and the fate of the universe, he must prevent a terrible future only he can foresee.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-play"><i class="fas fa-play"></i> Watch Now</button>
+                <button class="btn btn-outline"><i class="fas fa-plus"></i> My List</button>
+                <button class="btn btn-icon" title="Add to Favorites"><i class="far fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Trending Now Section -->
+        <section class="section" id="trending">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="movie-grid">
+                <!-- Movie cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Popular Movies Section -->
+        <section class="section" id="popular">
+            <div class="section-header">
+                <h2>Popular Movies</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="movie-grid">
+                <!-- Movie cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- TV Shows Section -->
+        <section class="section" id="tv-shows">
+            <div class="section-header">
+                <h2>Popular TV Shows</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="movie-grid">
+                <!-- Movie cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="highlight">Cine</span>Verse
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <a href="#">Home</a>
+                    <a href="#movies">Movies</a>
+                    <a href="#tv-shows">TV Shows</a>
+                    <a href="#trending">Trending</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CinemaVerse. All rights reserved.</p>
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>Français</option>
+                        <option>Deutsch</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+                    <button class="btn play-btn"><i class="fas fa-play"></i> Play</button>
+                    <button class="btn info-btn"><i class="fas fa-info-circle"></i> More Info</button>
+                </div>
+                <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section" id="trending">
+            <h2>Trending Now</h2>
+            <div class="movie-row">
+                <!-- Movie cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="section" id="popular">
+            <h2>Popular on MovieFlix</h2>
+            <div class="movie-row">
+                <!-- Movie cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="section" id="new-releases">
+            <h2>New Releases</h2>
+            <div class="movie-row">
+                <!-- Movie cards will be added dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Audio Description</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Legal Notices</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Help Center</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Corporate Information</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Media Center</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <p class="copyright">© 2025 MovieFlix, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
